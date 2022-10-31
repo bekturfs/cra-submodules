@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
-import { AppProvider } from "../polaris/polaris-react";
-import enTranslations from "../polaris/polaris-react/locales/en.json";
+import "polaris/polaris-react/build/esm/styles.css";
+import { AppProvider, Button } from "polaris/polaris-react";
+import enTranslations from "polaris/polaris-react/locales/en.json";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
       </header>
       <AppProvider i18n={enTranslations}>
         <div>Test</div>
+        <Button>Hello</Button>
       </AppProvider>
     </div>
   );
